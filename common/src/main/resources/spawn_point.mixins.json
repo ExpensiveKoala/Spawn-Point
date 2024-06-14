@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.pricelesskoala.spawnpoint.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "PlayerListMixin",
+    "ServerPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
