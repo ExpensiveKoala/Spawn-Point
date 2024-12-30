@@ -1,37 +1,37 @@
 {
-  "schemaVersion": 1,
-  "id": "spawn_point",
-  "version": "${version}",
-  "name": "Spawn Point",
-  "description": "This is an example description! Tell everyone what your mod is about!",
-  "authors": [
-    "Me!"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-  "license": "CC0-1.0",
-  "icon": "assets/spawn_point/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "com.pricelesskoala.spawnpoint.fabric.ExampleModFabric"
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
     ],
-    "client": [
-      "com.pricelesskoala.spawnpoint.fabric.client.ExampleModFabricClient"
-    ]
-  },
-  "mixins": [
-    "spawn_point.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.15.11",
-    "minecraft": "~1.20.5",
-    "java": ">=21",
-    "fabric-api": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
-  }
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "${license}",
+    "icon": "${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "koala.spawnpoint.SpawnPointModFabric"
+        ],
+        "client": [
+            "koala.spawnpoint.client.SpawnPointModFabricClient"
+        ]
+    },
+    "mixins": [
+        "${mod_id}.mixins.json",
+        "${mod_id}.fabric.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=${java_version}",
+        "forgeconfigapiport": "^${fconfig_version}"
+    }
 }
+  

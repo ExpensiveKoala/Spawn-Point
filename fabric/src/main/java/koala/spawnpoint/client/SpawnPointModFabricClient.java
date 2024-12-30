@@ -1,4 +1,4 @@
-package com.pricelesskoala.spawnpoint.fabric.client;
+package koala.spawnpoint.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
